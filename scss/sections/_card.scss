@@ -1,5 +1,5 @@
 .card {
-    box-shadow: inset 0 0 10px rgb(12, 8, 8);
+  box-shadow: inset 0 0 10px rgb(12, 8, 8);
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -19,69 +19,86 @@
     background-size: cover;
   }
 
-    // &__userimg {
-    // 	border-radius: 50%;
-    // 	border: solid 7px white;
-    // }
+  // &__userimg {
+  // 	border-radius: 50%;
+  // 	border: solid 7px white;
+  // }
 
-    &__profilepic {
-        height: 120px;
-        width: auto;
-      border: solid 7px white;
-      border-radius: 50%;
-      margin-top: 70px;
-    }
+  &__profilepic {
+    height: 120px;
+    width: auto;
+    border: solid 7px white;
+    border-radius: 50%;
+    margin-top: 70px;
+    background-color: gold;
+  }
 
-    &__playerinfo {
-      margin: 90px 0 0 0;
-      text-align: center;
-    }
+  &__playerinfo {
+    margin: 65px 0 0 0;
+    text-align: center;
+  }
 
-    &__name {
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(12, 53, 0, 0.9);
+  }
+
+  &__age {
+    color: hsl(228, 15%, 34%);
+    font-weight: 400;
+  }
+
+  &__club {
+    margin: 9px 0 0 0;
+    font-size: 14px;
+    color: hsl(228, 15%, 34%);
+    font-weight: 400;
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    border-width: 0;
+    color: hsl(230, 17%, 86%);
+    background-color: hsl(230, 17%, 86%);
+    margin: 15px 0;
+  }
+
+  &__stats {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(12, 53, 0, 0.9);
+  }
+
+  &__tag {
+    font-size: 14px;
+    color: hsl(228, 15%, 34%);
+    font-weight: 400;
+    margin: 7px 0 0 0;
+  }
+
+  &__btn {
+    box-shadow: inset 0 0 10px rgb(12, 8, 8);
+    background: linear-gradient(to left,rgba(49, 209, 0, 0.9) 5%, rgb(234, 238, 9) 60%);
+      padding: 9px 0;
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 0 0 18px 18px;
+      font-size: 15px;
       font-weight: 700;
-      font-size: 18px;
-      color: hsl(229, 23%, 23%);
-    }
+      color: rgba(12, 53, 0, 0.9);
 
-    &__age {
-      color: hsl(227, 10%, 46%);
-      font-weight: 400;
-    }
-
-    &__club {
-      margin: 9px 0 0 0;
-      font-size: 14px;
-      color: hsl(227, 10%, 46%);
-          font-weight: 400;
-    }
-
-    &__line {
-          width: 100%;
-      height: 1px;
-      border-width: 0;
-      color: hsl(230, 17%, 86%);
-      background-color:hsl(230, 17%, 86%);
-          margin: 22px 0;
-    }
-
-    &__stats {
-          width: 90%;
-      display: flex;
-          justify-content: space-around;
-          text-align: center;
-    }
-
-      &__number {
-          font-weight: 700;
-      font-size: 18px;
-          color: hsl(229, 23%, 23%);
-
-      }
-
-      &__tag {
-          font-size: 14px;
-      color: hsl(227, 10%, 46%);
-          font-weight: 400;
-          margin: 9px 0 0 0;
+      &:hover {
+        background: gold;
+        color: black;
       }
   }
+}

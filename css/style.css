@@ -42,24 +42,25 @@ body {
   border: solid 7px white;
   border-radius: 50%;
   margin-top: 70px;
+  background-color: gold;
 }
 .card__playerinfo {
-  margin: 90px 0 0 0;
+  margin: 65px 0 0 0;
   text-align: center;
 }
 .card__name {
   font-weight: 700;
   font-size: 18px;
-  color: #2d3248;
+  color: rgba(12, 53, 0, 0.9);
 }
 .card__age {
-  color: #6a6f81;
+  color: #4a4f64;
   font-weight: 400;
 }
 .card__club {
   margin: 9px 0 0 0;
   font-size: 14px;
-  color: #6a6f81;
+  color: #4a4f64;
   font-weight: 400;
 }
 .card__line {
@@ -68,7 +69,7 @@ body {
   border-width: 0;
   color: #d5d7e1;
   background-color: #d5d7e1;
-  margin: 22px 0;
+  margin: 15px 0;
 }
 .card__stats {
   width: 90%;
@@ -79,13 +80,28 @@ body {
 .card__number {
   font-weight: 700;
   font-size: 18px;
-  color: #2d3248;
+  color: rgba(12, 53, 0, 0.9);
 }
 .card__tag {
   font-size: 14px;
-  color: #6a6f81;
+  color: #4a4f64;
   font-weight: 400;
-  margin: 9px 0 0 0;
+  margin: 7px 0 0 0;
+}
+.card__btn {
+  box-shadow: inset 0 0 10px #0c0808;
+  background: linear-gradient(to left, rgba(49, 209, 0, 0.9) 5%, #eaee09 60%);
+  padding: 9px 0;
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 0 0 18px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(12, 53, 0, 0.9);
+}
+.card__btn:hover {
+  background: gold;
+  color: black;
 }
 
 .header {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -16,98 +16,43 @@
 </header>
 
 <body>
-    <section class="container">
-        <div class="card">
-            <div class="card__topimage">
-                <!-- <div class="card__userimg"> -->
-                <img src="images/244149-1618748156.webp" alt="" class="card__profilepic" />
-                <!-- </div> -->
-            </div>
+    <div class="container">
+        <template id="template">
+            <div class="card">
+                <div class="card__topimage">
+                    <!-- <div class="card__userimg"> -->
+                    <img src="images/244149-1618748156.webp" alt="" class="card__profilepic" />
+                    <!-- </div> -->
+                </div>
 
-            <div class="card__playerinfo">
-                <div class="card__name">
-                    Andre Blake <span class="card__age">30</span>
+                <div class="card__playerinfo">
+                    <div class="card__name">
+                        Andre Blake <span> <p class="card__age">30</p> </span>
+                    </div>
+                    <div class="card__club">Philadelphia Union</div>
                 </div>
-                <div class="card__club">Philadelphia Union</div>
-            </div>
-            <hr class="card__line">
-            </hr>
-            <div class="card__stats">
-                <div class="card__role">
-                    <div class="card__number">GK</div>
-                    <div class="card__tag">Position</div>
+                <hr class="card__line">
+                </hr>
+                <div class="card__stats">
+                    <div class="card__role">
+                        <div class="card__number role">GK</div>
+                        <div class="card__tag">Position</div>
+                    </div>
+                    <div class="card__app">
+                        <div class="card__number app">45</div>
+                        <div class="card__tag">Appearances</div>
+                    </div>
+                    <div class="card__goals">
+                        <div class="card__number num">0</div>
+                        <div class="card__tag contri">Goals</div>
+                    </div>
                 </div>
-                <div class="card__app">
-                    <div class="card__number">45</div>
-                    <div class="card__tag">Appearances</div>
-                </div>
-                <div class="card__goals">
-                    <div class="card__number">0</div>
-                    <div class="card__tag">Goals</div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__topimage">
-                <!-- <div class="card__userimg"> -->
-                <img src="images/244149-1618748156.webp" alt="" class="card__profilepic" />
-                <!-- </div> -->
-            </div>
+                <button class="card__btn">MORE INFO</button>
 
-            <div class="card__playerinfo">
-                <div class="card__name">
-                    Andre Blake <span class="card__age">30</span>
-                </div>
-                <div class="card__club">Philadelphia Union</div>
             </div>
-            <hr class="card__line">
-            </hr>
-            <div class="card__stats">
-                <div class="card__role">
-                    <div class="card__number">GK</div>
-                    <div class="card__tag">Position</div>
-                </div>
-                <div class="card__app">
-                    <div class="card__number">45</div>
-                    <div class="card__tag">Appearances</div>
-                </div>
-                <div class="card__goals">
-                    <div class="card__number">0</div>
-                    <div class="card__tag">Goals</div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__topimage">
-                <!-- <div class="card__userimg"> -->
-                <img src="images/244149-1618748156.webp" alt="" class="card__profilepic" />
-                <!-- </div> -->
-            </div>
-
-            <div class="card__playerinfo">
-                <div class="card__name">
-                    Andre Blake <span class="card__age">30</span>
-                </div>
-                <div class="card__club">Philadelphia Union</div>
-            </div>
-            <hr class="card__line">
-            </hr>
-            <div class="card__stats">
-                <div class="card__role">
-                    <div class="card__number">GK</div>
-                    <div class="card__tag">Position</div>
-                </div>
-                <div class="card__app">
-                    <div class="card__number">45</div>
-                    <div class="card__tag">Appearances</div>
-                </div>
-                <div class="card__goals">
-                    <div class="card__number">0</div>
-                    <div class="card__tag">Goals</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </template>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
