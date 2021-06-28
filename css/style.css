@@ -33,7 +33,7 @@ body {
   text-align: center;
   width: 100%;
   height: 35%;
-  background: url("/images/jamaicaflag.jpg");
+  background: url("../images/jamaicaflag.jpg");
   background-size: cover;
 }
 .card__profilepic {
