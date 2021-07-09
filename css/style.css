@@ -98,6 +98,7 @@ body {
   font-size: 15px;
   font-weight: 700;
   color: rgba(12, 53, 0, 0.9);
+  z-index: 1;
 }
 .card__btn:hover {
   background: gold;
