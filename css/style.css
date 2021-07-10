@@ -191,12 +191,14 @@ body {
   border-radius: 50%;
   height: 100px;
   width: 100px;
+  background: white;
 }
 .container__cards .container__modal--img img {
   border-radius: 50%;
   border: 5px white solid;
   height: 100%;
   width: 100%;
+  background: white;
 }
 
 /*# sourceMappingURL=style.css.map */
