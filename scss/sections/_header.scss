@@ -16,6 +16,11 @@
     display: flex;
   }
 
+	&__menu {
+		display: block;
+		z-index: 1;
+	}
+
   &__navlist {
     display: none;
     list-style: none;

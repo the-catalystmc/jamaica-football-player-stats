@@ -111,6 +111,10 @@ body {
 .header__navbar {
   display: flex;
 }
+.header__menu {
+  display: block;
+  z-index: 1;
+}
 .header__navlist {
   display: none;
   list-style: none;
