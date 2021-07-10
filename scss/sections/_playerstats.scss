@@ -1,0 +1,63 @@
+.container__cards {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 5px 0 5px;
+  text-align: center;
+
+  .container__header {
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    background-color: rgba(94, 255, 1, 0.205);
+  }
+
+  .overlay {
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .container__modal {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    align-self: center;
+    flex-direction: column;
+    height: 85%;
+    background: linear-gradient(
+        to right,
+        rgb(234, 238, 9) 28%,
+        rgba(49, 209, 0, 0.9) 50%
+      );
+      width: 95%;
+    font-size: 40px;
+    padding: 10px 20px;
+
+    &--button {
+      font-size: 40px;
+      align-self: flex-end;
+      background: none;
+      border: none;
+    }
+
+    &--img {
+      align-self: center;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+
+      img {
+        border-radius: 50%;
+        border: 5px white solid;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

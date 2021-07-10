@@ -1,4 +1,4 @@
-const container = document.querySelector(".container");
+const container = document.querySelector(".container__cards");
 const card = document.querySelector("#template");
 
 let myData = [
@@ -35,6 +35,14 @@ let myData = [
   },
 ];
 
+const modalWindow = document.querySelector('.container__modal');
+
+const displayModalWindow = (projectInfo) => {
+modalWindow.querySelector('.container__profilepic').src = projectInfo.playerPic;
+
+document.querySelector('.overlay').style.display = 'flex'; 
+}
+
 const createProjectElement = (projectInfo) => {
   const clone = card.content.firstElementChild.cloneNode(true);
   clone.querySelector('.card__profilepic').src = projectInfo.playerPic;
@@ -45,6 +53,10 @@ const createProjectElement = (projectInfo) => {
   clone.querySelector('.app').innerText = projectInfo.playerApp;
   clone.querySelector('.num').innerText = projectInfo.playerNumbers;
   clone.querySelector('.contri').innerText = projectInfo.playerDue;
+
+  clone.querySelector('.card__btn').addEventListener('click', () => {
+    displayModalWindow(projectInfo);
+  })
 
   container.appendChild(clone);
 };
@@ -57,4 +69,28 @@ const setUpPage = () => {
 
 window.addEventListener('load', () => {
     setUpPage();
+  });
+
+  const menuBtn = document.querySelector('.header__menu');
+  const closeMenuBtn = document.querySelector('.header__pop-menu--button');
+  const menuItem = document.querySelector('.header__pop-menu--navlist');
+
+  const modalClose = document.querySelector('.container__modal--button');
+
+  modalClose.addEventListener('click', () => {
+    document.querySelector('.overlay').style.display = 'none';
+  })
+
+  menuBtn.addEventListener('click', () => {
+    document.querySelector('.header__pop-menu').style.display = 'flex';
+  })
+
+  closeMenuBtn.addEventListener('click', () => {
+    document.querySelector('.header__pop-menu').style.display = 'none';
+  })
+
+  menuItem.addEventListener('click', (e) => {
+    if (e.target && e.target.nodeName === 'A') {
+      document.querySelector('.header__pop-menu').style.display = 'none';
+    }
   });

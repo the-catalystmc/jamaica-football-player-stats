@@ -2,55 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-    <title>Jamaican Soccer Player Profiles</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/102965b95f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Jamaican Soccer Player Profiles</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="header__title">Players Statistics</h1>
-    </header>
-    <main class="container">
-        <template id="template">
-            <div class="card">
-                <div class="card__topimage">
-                    <!-- <div class="card__userimg"> -->
-                    <img src="images/244149-1618748156.webp" alt="" class="card__profilepic" />
-                    <!-- </div> -->
-                </div>
+	<header class="header">
+		<nav class="header__navbar">
+			<i class="header__menu fa fa-bars fa-2x"></i>
+			<ul class="header__navlist">
+				<li class="header__navitem"><a href="#container__cards">Player Statistics</a></li>
+				<li class="header__navitem"><a href="#container__cards">News</a></li>
+				<li class="header__navitem"><a href="#container__cards">Club Level</a></li>
+				<li class="header__navitem"><a href="#container__cards">Podcast</a></li>
+				<li class="header__navitem"><a href="#container__cards">Legends & Leaders</a></li>
+			</ul>
+		</nav>
+		<div class="header__pop-menu">
+			<button class="header__pop-menu--button">&times;</button>
+			<ul class="header__pop-menu--navlist">
+				<li class="header__pop-menu--navitem"><a href="#container__cards">Player Statistics</a></li>
+				<li class="header__pop-menu--navitem"><a href="#container__cards">News</a></li>
+				<li class="header__pop-menu--navitem"><a href="#container__cards">Club Level</a></li>
+				<li class="header__pop-menu--navitem"><a href="#container__cards">Podcast</a></li>
+				<li class="header__pop-menu--navitem"><a href="#container__cards">Leaderboards</a></li>
+				<li class="header__pop-menu--navitem"><a href="#container__cards">Legends</a></li>
 
-                <div class="card__playerinfo">
-                    <div class="card__name">
-                        Andre Blake <span> <p class="card__age">30</p> </span>
-                    </div>
-                    <div class="card__club">Philadelphia Union</div>
-                </div>
-                <hr class="card__line">
-                </hr>
-                <div class="card__stats">
-                    <div class="card__role">
-                        <div class="card__number role">GK</div>
-                        <div class="card__tag">Position</div>
-                    </div>
-                    <div class="card__app">
-                        <div class="card__number app">45</div>
-                        <div class="card__tag">Appearances</div>
-                    </div>
-                    <div class="card__goals">
-                        <div class="card__number num">0</div>
-                        <div class="card__tag contri">Goals</div>
-                    </div>
-                </div>
-                <button class="card__btn">MORE INFO</button>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<section class="container__cards" id="container__cards">
+			<h2 class="container__header">Player Statistics</h2>
+			<div class="overlay">
+				<div class="container__modal">
+					<button class="container__modal--button">&times;</button>
+					<div class="container__modal--img">
+						<img src="images/244149-1618748156.webp" alt="player picture" class="container__profilepic">
+					</div>
 
-            </div>
-        </template>
-    </main>
-    <script src="script.js"></script>
+				</div>
+			</div>
+			<template id="template">
+				<div class="card">
+					<div class="card__topimage">
+						<!-- <div class="card__userimg"> -->
+						<img src="images/244149-1618748156.webp" alt="" class="card__profilepic" />
+						<!-- </div> -->
+					</div>
+
+					<div class="card__playerinfo">
+						<div class="card__name">
+							Andre Blake <span>
+								<p class="card__age">30</p>
+							</span>
+						</div>
+						<div class="card__club">Philadelphia Union</div>
+					</div>
+					<hr class="card__line">
+					</hr>
+					<div class="card__stats">
+						<div class="card__role">
+							<div class="card__number role">GK</div>
+							<div class="card__tag">Position</div>
+						</div>
+						<div class="card__app">
+							<div class="card__number app">45</div>
+							<div class="card__tag">Appearances</div>
+						</div>
+						<div class="card__goals">
+							<div class="card__number num">0</div>
+							<div class="card__tag contri">Goals</div>
+						</div>
+					</div>
+					<button class="card__btn">MORE INFO</button>
+
+				</div>
+			</template>
+		</section>
+	</main>
+	<script src="script.js"></script>
 </body>
 
 </html>
