@@ -200,5 +200,10 @@ body {
   width: 100%;
   background: white;
 }
+.container__cards .container__modal--info1 {
+  font-size: 30px;
+  text-shadow: 4px 2px 1px white;
+  padding-top: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
