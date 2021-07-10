@@ -3,7 +3,7 @@ const card = document.querySelector("#template");
 
 let myData = [
   {
-    playerPic: "images/244149-1618748156.webp",
+    playerPic: "images/andre.jpeg",
     playerName: "Andre Blake",
     playerAge: "30",
     playerClub: "Philadelphia Union",
